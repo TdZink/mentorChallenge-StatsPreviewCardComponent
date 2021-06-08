@@ -1,0 +1,24 @@
+{
+  "name": "mentorchallenge-statspreviewcardcomponent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html --port 8080",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TdZink/mentorChallenge-StatsPreviewCardComponent.git"
+  },
+  "author": "Zink, Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TdZink/mentorChallenge-StatsPreviewCardComponent/issues"
+  },
+  "homepage": "https://github.com/TdZink/mentorChallenge-StatsPreviewCardComponent#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "postcss-preset-env": "^6.7.0"
+  }
+}
