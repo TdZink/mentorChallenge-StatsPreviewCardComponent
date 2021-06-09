@@ -21,8 +21,11 @@ html {
     display: grid;
     grid-template-columns: 50% 50%;
     width: 1100px;
-    -webkit-transform: translate(40%, 50%);
-    transform: translate(40%, 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 .image-container {
     display: -webkit-box;
@@ -104,8 +107,9 @@ p {
 @media (max-width: 500px) {
     .card-container {
         grid-template-columns: 100%;
-        -webkit-transform: translateY(5%);
-        transform: translateY(5%);
+        position: absolute;
+        -webkit-transform: translate(-20%, -50%);
+        transform: translate(-20%, -50%);
     }
     .image-container {
         background-size: contain;
@@ -162,4 +166,3 @@ p {
         margin-bottom: 6px;
     }
 }
-/*# sourceMappingURL=/style.f8c58977.css.map */
