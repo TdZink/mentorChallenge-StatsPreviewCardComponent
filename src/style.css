@@ -114,7 +114,7 @@ p {
 @media all and (max-width: 500px) {
     .card-container {
         grid-template-columns: 100%;
-        transform: translate(0, 0);
+        transform: translate(0%, 5%);
     }
 
     .image-container {
@@ -134,8 +134,11 @@ p {
 
     .stats-container {
         width: 327px;
-        height: 700px;
+        height: 525px;
         transform: translate(20%, 0);
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 8px;
+        grid-row-start: 2;
     }
 
     .stats-text {
@@ -145,10 +148,32 @@ p {
     h1 {
         text-align: center;
         font-size: 28px;
-        margin-top: 25px;
+        margin-top: 40px;
+        margin-right: 25px;
     }
 
     .leftadjust-content {
-        margin-left: 20px;
+        margin-left: 35px;
+    }
+
+    .rightadjust-content {
+        margin-right: 35px;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .stats-content {
+        /* TODO: Update this class so the grid is one column with three rows */
+        grid-template-columns: 100%;
+        margin-left: 0px;
+        transform: translate(10%, 40%);
+        text-align: center;
+        grid-gap: 24px;
+    }
+    .stats-value {
+        margin-bottom: 6px;
     }
 }
