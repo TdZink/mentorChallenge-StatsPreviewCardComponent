@@ -110,12 +110,20 @@ html {
     .stats-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 50px;
+        margin-left: 75px;
     }
 
     .title-text {
-        margin-top: 20px;
-        margin-left: 40px;
-        margin-right: 150px;
-        font-size: 2rem;
+        margin-top: 60px;
+        margin-left: 75px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        font-size: 2.4rem;
+    }
+
+    .description-text {
+        margin-left: 75px;
+        margin-right: 100px;
     }
 }
