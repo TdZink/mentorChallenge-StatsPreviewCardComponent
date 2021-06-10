@@ -103,6 +103,7 @@ html {
     }
 
     .image-container {
+        background: url(./images/image-header-desktop.jpg) no-repeat;
         height: 446px;
         width: 540px;
     }
