@@ -20,20 +20,20 @@ html {
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    width: 1100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
 }
 
 .image-container {
-    display: flex;
-    background: url(./images/image-header-desktop.jpg);
-    width: 540px;
-    height: 446px;
+    height: 240px;
+    width: 327px;
+    background: url(./images/image-header-mobile.jpg) no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .image-overlay {
@@ -42,9 +42,12 @@ html {
     background: hsla(277, 88%, 40%, 0.5);
 }
 
-.image-container,
-.image-overlay {
-    border-top-right-radius: 8px;
+.stats-container {
+    padding-top: 30px;
+    width: 327px;
+    text-align: center;
+    background-color: var(--color-primary-cardBackground);
+    border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
@@ -52,132 +55,35 @@ html {
     color: var(--color-primary-accent);
 }
 
-.stats-container {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    background-color: var(--color-primary-cardBackground);
-    height: 446px;
+.title-text {
+    font-size: 1.9rem;
+    margin: 0px 20px;
 }
 
-.leftadjust-content {
-    margin-left: 50px;
-}
-
-h1 {
-    font-size: 36px;
-    margin-right: 50px;
-}
-
-.stats-value {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.stats-description {
-    font-size: 12px;
-    font-family: "Lexend Deca", sans-serif;
-    opacity: 0.6;
-}
-
-.rightadjust-content {
-    margin-right: 125px;
+.description-text {
+    opacity: 0.7;
+    margin: 0px 30px;
+    line-height: 1.5;
 }
 
 .stats-content {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    margin-top: 10px;
-    margin-right: 50px;
-    transform: translate(0, 185%);
+    padding-bottom: 20px;
 }
 
-.stats-text {
-    transform: translate(0, 20%);
+.stats-value {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
 
-p {
-    line-height: 1.6;
-    opacity: 0.75;
-    margin-top: 50px;
+.stats-description {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-bottom: 25px;
+    letter-spacing: 0.1rem;
 }
 
 .attribution {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
-    transform: translate(40%, 0%);
-    visibility: hidden;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
-@media all and (max-width: 500px) {
-    .card-container {
-        grid-template-columns: 100%;
-        position: absolute;
-        transform: translate(-20%, -50%);
-    }
-
-    .image-container {
-        /* background: url(./images/image-header-desktop.jpg); */
-        background-size: contain;
-        width: 327px;
-        height: 240px;
-        transform: translate(20%, 0);
-        border-bottom-right-radius: 0px;
-    }
-
-    .image-container,
-    .image-overlay {
-        border-bottom-right-radius: 0px;
-        border-top-left-radius: 10px;
-    }
-
-    .stats-container {
-        width: 327px;
-        height: 525px;
-        transform: translate(20%, 0);
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 8px;
-        grid-row-start: 2;
-    }
-
-    .stats-text {
-        margin-top: -60px;
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 28px;
-        margin-top: 40px;
-        margin-right: 25px;
-    }
-
-    .leftadjust-content {
-        margin-left: 35px;
-    }
-
-    .rightadjust-content {
-        margin-right: 35px;
-    }
-
-    p {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .stats-content {
-        /* TODO: Update this class so the grid is one column with three rows */
-        grid-template-columns: 100%;
-        margin-left: 0px;
-        transform: translate(10%, 40%);
-        text-align: center;
-        grid-gap: 24px;
-    }
-    .stats-value {
-        margin-bottom: 6px;
-    }
+    display: none;
 }
